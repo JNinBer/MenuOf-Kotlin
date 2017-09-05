@@ -1,0 +1,59 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="homeAsUpIndicator">@drawable/ic_arrow_back_black_24dp</item>
+        <item name="android:textColor">@color/gray_dark</item>
+        <item name="android:textColorPrimary">@color/white</item>
+        <item name="android:textSize">@dimen/font_normal</item>
+        <item name="android:editTextStyle">@style/AppEdit</item>
+        <item name="android:editTextColor">@color/colorAccent</item>
+        <item name="android:buttonStyle">@style/AppButton</item>
+        <item name="android:alertDialogTheme">@style/Dialog.Alert</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+
+    <style name="StartStyle" parent="AppTheme">
+        <item name="android:windowBackground">@drawable/splash</item>
+    </style>
+
+    <style name="AppEdit" parent="Widget.AppCompat.EditText">
+        <item name="android:layout_height">44dp</item>
+        <item name="android:textColor">@color/colorAccent</item>
+    </style>
+
+    <style name="AppButton" parent="Widget.AppCompat.Button">
+        <item name="android:layout_height">44dp</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">@dimen/font_normal</item>
+        <item name="android:background">@drawable/bg_app_button</item>
+
+    </style>
+
+    <style name="AppButton.Alert" parent="Widget.AppCompat.Button">
+        <item name="android:layout_height">40dp</item>
+        <item name="android:textColor">@color/gray_dark</item>
+        <item name="android:textSize">@dimen/font_normal</item>
+        <item name="android:background">@null</item>
+
+    </style>
+
+    <style name="Dialog.Alert" parent="Theme.AppCompat.Light.Dialog.Alert">
+        <item name="colorAccent">@color/gray_dark</item>
+        <item name="android:button">@style/AppButton.Alert</item>
+    </style>
+
+</resources>
